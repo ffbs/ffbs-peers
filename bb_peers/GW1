@@ -1,2 +1,2 @@
 key "872cac3b00096a8ee763e80df2be331ba1ffa5dbe00d1e025a85d25c3cee82fb";
-remote ipv4 "gw01.freifunk-bs.de" port 10000;
+remote ipv4 "gw01.freifunk-bs.de" port 10011;
