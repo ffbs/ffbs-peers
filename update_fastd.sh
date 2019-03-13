@@ -7,7 +7,10 @@ git pull
 new_rev=$(git rev-parse HEAD)
 if [[ $rev != $new_rev ]]
   then
-  /bin/kill -HUP $(pidof fastd) > /dev/null
+  for pid in $(pidof fastd); do
+    /bin/kill -HUP $pid > /dev/null
+    sleep 5
+  done
   exit 0
 else
   exit 0
